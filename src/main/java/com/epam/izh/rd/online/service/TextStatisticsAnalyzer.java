@@ -5,8 +5,10 @@ import com.epam.izh.rd.online.helper.Direction;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 public interface TextStatisticsAnalyzer {
+    static final String REGEX = "[^a-zA-Zа-яА-Я]+";
 
     int countSumLengthOfWords(String text);
 
